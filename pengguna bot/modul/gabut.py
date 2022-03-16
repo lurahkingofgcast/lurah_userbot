@@ -11,34 +11,33 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`𝐀𝐍𝐉𝐀𝐘 𝐋𝐔𝐑𝐀𝐇 𝐌𝐄𝐍𝐀𝐍𝐆🐣`")
-# Salam
+# lrh1
 
 
-@register(outgoing=True, pattern="^.lrhh(?: |$)(.*)")
+@register(outgoing=True, pattern="^.lrh3(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`𝐃𝐈𝐌𝐀𝐍𝐀 𝐀𝐃𝐀 𝐁𝐀𝐍𝐒𝐎𝐒.....𝐃𝐈 𝐒𝐈𝐓𝐔 𝐀𝐃𝐀 𝐋𝐔𝐑𝐀𝐇🐣`")
-# Menjawab Salam
+# lrh3
 
 
 @register(outgoing=True, pattern="^.lrh(?: |$)(.*)")
 async def perkenalan(event):
     event.pattern_match.group(1)
     await event.edit("`𝐀𝐍𝐉𝐀𝐘 𝐀𝐃𝐀 𝐁𝐀𝐍𝐒𝐎𝐒,𝐋𝐔𝐑𝐀𝐇 𝐆𝐈𝐊𝐄𝐒 𝐃𝐔𝐋𝐔🐣.....`")
-# Istigfar
+# lrh
 
 
 @register(outgoing=True, pattern="^.lrh2(?: |$)(.*)")
 async def perkenalan(event):
     event.pattern_match.group(1)
     await event.edit(f"`𝐀𝐍𝐉𝐀𝐘 𝐋𝐔𝐑𝐀𝐇 𝐂𝐀𝐊𝐄𝐏🐣`")
-    sleep(2)
-    await event.edit(f"`𝙂𝙬 𝙏𝙞𝙣𝙜𝙜𝙖𝙡 𝘿𝙞 {WEATHER_DEFCITY}`")
-    sleep(2)
-    await event.edit("`𝙎𝙖𝙡𝙖𝙢 𝙆𝙚𝙣𝙖𝙡...`")
-    sleep(2)
-    await event.edit("`𝙐𝙙𝙖𝙝 𝙂𝙞𝙩𝙪 𝘼𝙟𝙖 :𝙫`")
-# Perkenalan
+# lrh2
+
+@register(outgoing=True, pattern="^.lrh4(?: |$)(.*)")
+async def perkenalan(event):
+    event.pattern_match.group(1)
+    await event.edit(f"`𝗜𝗡𝗜 𝗔𝗗𝗔𝗟𝗔𝗛 𝗟𝗨𝗥𝗔𝗛 𝗥𝗔𝗝𝗔 𝗠𝗘𝗞𝗦𝗜𝗞𝗢 𝗘𝗟 𝗠𝗔𝗧𝗔𝗗𝗢𝗥𝗘 𝗦𝗔𝗟𝗩𝗔𝗗𝗢𝗥𝗘 𝗧𝗘𝗤𝗨𝗜𝗟𝗔 𝗘𝗟 𝗞𝗢𝗡𝗧𝗢𝗟𝗘🐣`")
 
 
 CMD_HELP.update({
@@ -46,7 +45,12 @@ CMD_HELP.update({
     \n\n Cmd : `.lrh`\
     \nUsage : Lurah Gikes\
     \n\n Cmd : `.lrh2`\
-    \nUsage : Memperkenalkan Diri\
+    \nUsage : cakep\
     \n\n Cmd : `.lrhh`\
     \nUsage : bansos."
+    \n\n Cmd : `.lrh3`\
+    \nUsage : hadir."
+    \n\n Cmd : `.lrh4`\
+    \nUsage : salam lurah."
+
 })
